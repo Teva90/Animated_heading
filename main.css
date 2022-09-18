@@ -1,0 +1,58 @@
+@import "https://fonts.googleapis.com/css?family=Rubik+Mono+One";
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #444;
+    overflow-x: hidden;
+    font-family: "Rubik Mono One", sans-serif;
+    padding: 40px;
+    text-align: center;
+}
+.words {
+    color: #444;
+    font-size: 0;
+    line-height: 1;
+}
+.words span {
+    font-size: 120px;
+    display: inline-block;
+    animation: move 2s ease-in-out infinite;
+}
+.words span:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.words span:nth-child(3) {
+    animation-delay: 1s;
+}
+.words span:nth-child(4) {
+    animation-delay: 1.5s;
+}
+@keyframes move {
+    0% {
+        transform: translate(-33%, 0);
+    }
+    50% {
+        text-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    }
+    100% {
+        transform: translate(33%, 0);
+    }
+}
+.about {
+    max-width: 600px;
+    margin: 60px auto;
+    border: 2px solid #6d5b5e;
+    color: #a99094;
+    padding: 20px;
+    font-family: monaco, courier, mono-space;
+    line-height: 2;
+    box-shadow: 5px 5px 0 #333;
+}
+.about a {
+    background-color: #a99094;
+    color: #444;
+    text-decoration: none;
+    padding: 1px 4px;
+    white-space: nowrap;
+}
